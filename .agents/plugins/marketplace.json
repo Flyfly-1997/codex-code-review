@@ -1,0 +1,12 @@
+{
+  "name": "codex-code-review",
+  "plugins": [
+    {
+      "name": "code-review",
+      "source": {
+        "source": "local",
+        "path": "./plugins/code-review"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "code-review",
+  "version": "0.4.3",
+  "description": "Review GitHub pull requests, branches, commit ranges, and paths without changing the repository. Verify findings independently and get a merge verdict.",
+  "keywords": [
+    "code-review",
+    "git",
+    "pull-request",
+    "merge-verdict"
+  ],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "interface": {
+        "displayName": "Code Review",
+        "shortDescription": "Verified read-only review",
+        "longDescription": "Inspect Git changes in review packs, verify findings independently, and get a merge verdict. Supports GitHub pull requests, branches, commit ranges, and paths.",
+        "category": "Developer Tools",
+        "defaultPrompt": "Review the current branch without changing files and give a merge verdict."
+      }
+    }
+  }
+}
